@@ -1,47 +1,41 @@
 
-/* función y condicional*/
-function calcularedad(){
-    var edad = document.getElementById("edad").value;
 
-
-    if(edad==18){
-
-        alert("tú puedes entrar a nuestra pagina");
-
-    }else{
-        alert("este contenido es prohibido para ti");
+ 
+let productosPlacasVideo = [
+    {nombre: "placa de video", precio: 22000},
+    {nombre: "placa de video1", precio: 33000},
+    {nombre: "placa de video2", precio: 45000},
+    {nombre: "placa de video3", precio: 55000},
+]
+function operaciones(operacion){
+    if(operacion === "encontrar"){
+        return (producto) => productosPlacasVideo.find(x => x.nombre === producto)
     }
+    if (operacion === "filtrar"){
+        return (precio) => productosPlacasVideo.filter(x => x.precio > precio)
+    }
+}
+let filtro = operaciones ("filtrar")
+console.log(filtro(22000));
     
+let productosProcesadores = [
+    {nombre: "procesador", precio: 18.500},
+    {nombre: "procesador1", precio: 22.750},
+    {nombre: "procesador2", precio: 25.600},
+    {nombre: "procesador3", precio: 17.350},
+]
+function comprar(comprar){
+    if(comprar === "encontrar"){
+        return (producto) => productosProcesadores.find(x => x.nombre === producto)
+    }
+    if (comprar === "filtrar"){
+        return (precio) => productosProcesadores.filter(x => x.precio < precio)
+    }
 }
 
-/* ciclon "for"*/
-let n;
-let i;
-let m=0;
- for(i=1;i<=5;i++){
-    n = parseInt(prompt("ingrese el dato "+i+" de 5"));
- } 
-
- m = m+n;
-
- console.log(`}la suma total es: ${m}`);
- console.log(`el promedio es: ${m/5}`);
+let filt = comprar ("filtrar")
+console.log(filt(33000));
 
 
-/*switch*/
-var medioPago = Number(prompt("ingrese el medio de pago: 1-efectivo 2-tarjeta 3-bitcoin"));
 
-switch(medioPago){
-    case 1:
-        console.log("usted abonó con efectivo");
-        break
-    case 2:
-        console.log("usted abonó con tarjeta");
-        break
-    case 3:
-        console.log("usted abonó con bitcoin");
-        break
-    default:
-        console.log("no ha ingresado un valor válido");
-        break    
-}
+
