@@ -1,7 +1,7 @@
 
 
  
-let productosPlacasVideo = [
+/*let productosPlacasVideo = [
     {nombre: "placa de video", precio: 22000},
     {nombre: "placa de video1", precio: 33000},
     {nombre: "placa de video2", precio: 45000},
@@ -34,7 +34,16 @@ function comprar(comprar){
 }
 
 let filt = comprar ("filtrar")
-console.log(filt(33000));
+console.log(filt(33000));*/
+
+
+const formulario = document.getElementById("form")
+
+formulario.addEventListener("submit", function(e){
+    e.preventDefault();
+    let mail = document.getElementById("email-form").value;
+    console.log(mail);
+})
 
 
 
