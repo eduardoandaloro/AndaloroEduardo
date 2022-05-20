@@ -37,14 +37,38 @@ let filt = comprar ("filtrar")
 console.log(filt(33000));*/
 
 
-const formulario = document.getElementById("form")
+/*const formulario = document.getElementById("form")
 
 formulario.addEventListener("submit", function(e){
     e.preventDefault();
     let mail = document.getElementById("email-form").value;
     console.log(mail);
-})
+})*/
 
 
 
+/****localstorage y json****/
+function cargaraLocalStorage() {
+   const productosIniciales = [
+        {id: 1, producto: "placa de video"},
+        {id: 2, producto: "procesador"},
+        {id: 3, producto: "memoria ram"},
+        {id: 4, producto: "disco rigido"},
+    
+    ];
+
+ localStorage.setItem("productos", JSON.stringify(productosIniciales));
+}
+
+cargaraLocalStorage()
+function agregar(nombre){
+    let listaProductos = JSON.parse(localStorage.getItem("productos"));
+    let product = {id: listaProductos.length + 1, producto: nombre};
+
+    listaProductos.push(product);
+    localStorage.setItem("productos", JSON.stringify(listaProductos));
+}
+
+let nombre = prompt("por favor ingresa el producto");
+agregar(nombre);
 
