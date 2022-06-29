@@ -1,38 +1,38 @@
 [
     {
-      "precio": 500,
+      "precio": 5899900,
       "id": 1,
-      "title": "Café",
+      "title": "notebooks ",
       "thumbnailUrl": "https://picsum.photos/id/0/600"
     },
     {
-      "precio": 300,
+      "precio": 35000,
       "id": 2,
-      "title": "Pizza",
-      "thumbnailUrl": "https://picsum.photos/id/10/600"
+      "title": "lo último en software",
+      "thumbnailUrl": "https://thumbs.dreamstime.com/z/concepto-de-la-seguridad-tecnolog%C3%ADa-del-negocio-sistema-c%C3%A1mara-cctv-136731057.jpg"
     },
     {
-      "precio": 100,
+      "precio": 17500,
       "id": 3,
-      "title": "Agua",
+      "title": "tegnologia de celulares",
       "thumbnailUrl": "https://picsum.photos/id/20/600"
     },
     {
-      "precio": 50,
+      "precio": 125000,
       "id": 4,
-      "title": "Sandía",
-      "thumbnailUrl": "https://picsum.photos/id/30/600"
+      "title": "celulares",
+      "thumbnailUrl": "https://www.altonivel.com.mx/wp-content/uploads/2022/02/mejores-celulares-2022.jpg"
     },
     {
-      "precio": 10,
+      "precio": 45000,
       "id": 5,
-      "title": "Mango",
-      "thumbnailUrl": "https://picsum.photos/id/40/600"
+      "title": "cpu",
+      "thumbnailUrl": "https://i0.wp.com/conocesobreinformatica.com/wp-content/uploads/2020/10/CPU-Definicion-caracteristicas-y-funciones-1.png?fit=768%2C372&ssl=1"
     },
     {
-      "precio": 150,
+      "precio": 78000,
       "id": 6,
-      "title": "Chela",
-      "thumbnailUrl": "https://picsum.photos/id/50/600"
+      "title": "placa de video",
+      "thumbnailUrl": "https://hardzone.es/app/uploads-hardzone.es/2020/08/Tarjetas-gr%C3%A1ficas-fiabilidad.jpg"
     }
   ]
